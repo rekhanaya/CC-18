@@ -176,34 +176,6 @@ const alumniData = [
   },
 ];
 
-const randomImages = [
-  "https://picsum.photos/200/300?random=1",
-  "https://picsum.photos/200/300?random=2",
-  "https://picsum.photos/200/300?random=3",
-  "https://picsum.photos/200/300?random=4",
-  "https://picsum.photos/200/300?random=5",
-  "https://picsum.photos/200/300?random=6",
-  "https://picsum.photos/200/300?random=7",
-  "https://picsum.photos/200/300?random=8",
-  "https://picsum.photos/200/300?random=9",
-  "https://picsum.photos/200/300?random=10",
-  "https://picsum.photos/200/300?random=11",
-  "https://picsum.photos/200/300?random=12",
-  "https://picsum.photos/200/300?random=13",
-  "https://picsum.photos/200/300?random=14",
-  "https://picsum.photos/200/300?random=15",
-  "https://picsum.photos/200/300?random=16",
-  "https://picsum.photos/200/300?random=17",
-  "https://picsum.photos/200/300?random=18",
-  "https://picsum.photos/200/300?random=19",
-  "https://picsum.photos/200/300?random=20",
-  "https://picsum.photos/200/300?random=21",
-  "https://picsum.photos/200/300?random=22",
-  "https://picsum.photos/200/300?random=23",
-  "https://picsum.photos/200/300?random=24",
-  "https://picsum.photos/200/300?random=25",
-];
-
 function createAlumniCard(alumni) {
   const col = document.createElement("div");
   col.className = "col-md-4 col-lg-3";
@@ -212,12 +184,10 @@ function createAlumniCard(alumni) {
   card.className = "alumni-card";
 
   const img = document.createElement("img");
-  if (alumni.photo === null) {
-    img.src =
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/340px-Default_pfp.svg.png";
-  } else {
-    img.src = alumni.photo;
-  }
+  img.src =
+    alumni.photo && alumni.photo !== "URL Foto" || NULL
+      ? alumni.photo
+      : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/340px-Default_pfp.svg.png";
   img.alt = `${alumni.nickname} photo`;
 
   const name = document.createElement("h2");
@@ -230,17 +200,17 @@ function createAlumniCard(alumni) {
   links.className = "links";
 
   const igLink = document.createElement("a");
-  igLink.href = alumni.ig;
+  igLink.href = alumni.ig !== "Link Instagram" ? alumni.ig : "#";
   igLink.textContent = "Instagram";
-  igLink.target = "_blank";
+  igLink.target = alumni.ig !== "Link Instagram" ? "_blank" : "_self";
 
   const separator = document.createElement("span");
   separator.textContent = "  ";
 
   const linkedinLink = document.createElement("a");
-  linkedinLink.href = alumni.linkedin;
+  linkedinLink.href = alumni.linkedin !== "Link LinkedIn" ? alumni.linkedin : "#";
   linkedinLink.textContent = "LinkedIn";
-  linkedinLink.target = "_blank";
+  linkedinLink.target = alumni.linkedin !== "Link LinkedIn" ? "_blank" : "_self";
 
   links.appendChild(igLink);
   links.appendChild(separator);
@@ -255,22 +225,11 @@ function createAlumniCard(alumni) {
   return col;
 }
 
-function assignRandomImages(alumniData, images) {
-  return alumniData.map((alumni) => {
-    return {
-      ...alumni,
-      photo: images[Math.floor(Math.random() * images.length)],
-    };
-  });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   const alumniContainer = document.getElementById("alumniContainer");
 
-  const alumniWithRandomImages = assignRandomImages(alumniData, randomImages);
-  const shuffledAlumniData = alumniWithRandomImages.sort(
-    () => Math.random() - 0.5
-  );
+  // No need for random image assignment since we default to the standard image
+  const shuffledAlumniData = alumniData.sort(() => Math.random() - 0.5);
 
   shuffledAlumniData.forEach((alumni) => {
     const col = createAlumniCard(alumni);
