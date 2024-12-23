@@ -1,0 +1,27 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: >
+          Hai, terima kasih sudah membuka issue pertama Anda di repository **CC-32 Alumni**! 🎉✨  
+          Kami sangat menghargai kontribusi Anda. Tim kami akan segera meninjau issue ini.  
+          Jangan ragu untuk memberikan detail tambahan jika diperlukan. 🚀  
+
+          Jika Anda ingin tahu lebih lanjut tentang cara berkontribusi, silakan cek [panduan kontribusi kami](./README.md). Terima kasih lagi! 🙏  
+          
+        pr-message: >
+          Hai, terima kasih atas pull request pertama Anda di repository **CC-32 Alumni**! 🎉✨  
+          Kontribusi Anda sangat berharga bagi komunitas kami. Tim kami akan segera meninjau perubahan Anda.  
+          Jangan lupa untuk memastikan bahwa PR Anda sudah memenuhi standar proyek, seperti yang disebutkan di [README](./README.md). 😊  
+
+          Terima kasih sudah membantu kami membuat proyek ini lebih baik! 🌟  
