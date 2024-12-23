@@ -27,34 +27,6 @@ Proyek ini dibangun menggunakan teknologi berikut:
 ├── 📄 script.js  
 └── 📄 README.md
 
-## 📋 Panduan Instalasi
-
-Ikuti langkah-langkah di bawah ini untuk menjalankan proyek ini di lokal Anda:
-
-1. **Clone repositori ini:**
-
-    ```bash
-    git clone
-    ```
-
-2. **Pindah ke direktori proyek:**
-
-    ```bash
-    cd
-    ```
-
-3. **Buka `index.html` di browser favorit Anda:**
-
-    ```bash
-    open index.html
-    ```
-
-    atau
-
-    ```bash
-    start index.html
-    ```
-
 ## 💡 Cara Menambahkan Data Alumni
 
 Untuk menambahkan data alumni baru, edit file `script.js` dan tambahkan objek baru ke dalam array `alumniData` dengan format berikut:
