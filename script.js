@@ -172,7 +172,7 @@ const alumniData = [
         campus: "School of Technopreneur Nusantara",
         ig: "https://www.instagram.com/epidoey/",
         linkedin: "https://www.linkedin.com/in/evid-wijaya/",
-        photo: "https://i.ibb.co.com/rHKkLXW/3a0eafea-d078-48ae-9d88-63c56c7522d8.jpg" alt="3a0eafea-d078-48ae-9d88-63c56c7522d8",
+        photo: "https://i.ibb.co.com/rHKkLXW/3a0eafea-d078-48ae-9d88-63c56c7522d8.jpg",
   },
 ];
 
