@@ -168,11 +168,11 @@ const alumniData = [
     photo: "URL Foto",
   },
   {
-     nickname: "epiddd",
+     nickname: "Evid",
         campus: "School of Technopreneur Nusantara",
         ig: "https://www.instagram.com/epidoey/",
         linkedin: "https://www.linkedin.com/in/evid-wijaya/",
-        photo: "https://i.ibb.co.com/rHKkLXW/3a0eafea-d078-48ae-9d88-63c56c7522d8.jpg",
+        photo: "https://i.ibb.co.com/2t2mY4h/c232297c-6922-4b43-a7e0-8f35f4125b44.jpg",
   }
 ];
 
