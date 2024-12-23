@@ -8,7 +8,7 @@ Proyek ini bertujuan untuk menampilkan buku alumni Bangkit 2024 kelas CC-32 deng
 
 ## 🚀 Demo
 
-Anda dapat melihat demo proyek ini [di sini](S) 🖥️🌈
+Anda dapat melihat demo proyek ini [di sini](jolycky.github.io/CC-32/) 🖥️🌈
 
 ## 🛠️ Teknologi yang Digunakan
 
