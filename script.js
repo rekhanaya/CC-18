@@ -1,9 +1,9 @@
 const alumniData = [
   {
     nickname: "Collin",
-    campus: "Asal Kampus",
-    ig: "Link Instagram",
-    linkedin: "Link LinkedIn",
+    campus: "Institut Teknologi Bandung",
+    ig: "https://www.instagram.com/",
+    linkedin: "https://www.linkedin.com/in/collin-sheima/",
     photo: "URL Foto",
   },
   {
