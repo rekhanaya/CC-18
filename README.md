@@ -1,14 +1,14 @@
-# 🎓📙 CC-32 Alumni 🎉✨
+# 🎓📙 CC-18 Alumni 🎉✨
 
 ![Alt text](https://lh3.googleusercontent.com/pw/AP1GczPumcH6nOs9pSRy70ch6YcR3QMO2ttB5MUkBdYLYNRACxP3msFebB7z7tJQWW0Qx1IClcPP3kW4GtBUGv5L0WKZVHns1-91vt0lGkLD34OjnHnWzrA=w2400)
 
-Selamat datang di **CC-32 Alumni**! 📖👩‍🎓👨‍🎓
+Selamat datang di **CC-18 Alumni**! 📖👩‍🎓👨‍🎓
 
-Proyek ini bertujuan untuk menampilkan buku alumni Bangkit 2024 kelas CC-32 dengan informasi seperti foto, nama, asal kampus, dan link ke Instagram serta LinkedIn. 🌟
+Proyek ini bertujuan untuk menampilkan buku alumni Bangkit 2024 kelas CC-18 dengan informasi seperti foto, nama, asal kampus, dan link ke Instagram serta LinkedIn. 🌟
 
 ## 🚀 Demo
 
-Anda dapat melihat demo proyek ini [di sini](jolycky.github.io/CC-32/) 🖥️🌈
+Anda dapat melihat demo proyek ini [di sini](jolycky.github.io/CC-18/) 🖥️🌈
 
 ## 🛠️ Teknologi yang Digunakan
 
