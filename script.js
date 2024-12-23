@@ -173,7 +173,7 @@ const alumniData = [
         ig: "https://www.instagram.com/epidoey/",
         linkedin: "https://www.linkedin.com/in/evid-wijaya/",
         photo: "https://i.ibb.co.com/rHKkLXW/3a0eafea-d078-48ae-9d88-63c56c7522d8.jpg",
-  },
+  }
 ];
 
 function createAlumniCard(alumni) {
@@ -185,7 +185,7 @@ function createAlumniCard(alumni) {
 
   const img = document.createElement("img");
   img.src =
-    alumni.photo && alumni.photo !== "URL Foto" || NULL
+    alumni.photo && alumni.photo !== "URL Foto"
       ? alumni.photo
       : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/340px-Default_pfp.svg.png";
   img.alt = `${alumni.nickname} photo`;
