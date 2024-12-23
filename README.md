@@ -74,7 +74,7 @@ const alumniData = [
 
 ## 📸 Cara Menambahkan Foto Alumni
 
-Anda dapat mengunggah foto alumni dengan tiga cara:
+Anda dapat mengunggah foto alumni dengan dua cara:
 
 ### 1. Menggunakan Freepik
 
