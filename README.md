@@ -122,6 +122,9 @@ Kami sangat menghargai kontribusi Anda! Silakan ikuti langkah-langkah berikut un
 
 Terima kasih telah berkontribusi! 🙏✨
 
+## Inspired By💡
+Rais Nuri
+
 ## 📜 Lisensi
 
 Proyek ini dilisensikan di bawah lisensi MIT. Lihat file [LICENSE](LICENSE) untuk informasi lebih lanjut. 📄
