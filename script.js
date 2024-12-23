@@ -184,6 +184,7 @@ function createAlumniCard(alumni) {
   card.className = "alumni-card";
 
   const img = document.createElement("img");
+  // Use the default image if no valid photo URL is provided
   img.src =
     alumni.photo && alumni.photo !== "URL Foto"
       ? alumni.photo
@@ -200,17 +201,19 @@ function createAlumniCard(alumni) {
   links.className = "links";
 
   const igLink = document.createElement("a");
-  igLink.href = alumni.ig !== "Link Instagram" ? alumni.ig : "#";
+  igLink.href = alumni.ig && alumni.ig !== "Link Instagram" ? alumni.ig : "#";
   igLink.textContent = "Instagram";
-  igLink.target = alumni.ig !== "Link Instagram" ? "_blank" : "_self";
+  igLink.target = alumni.ig && alumni.ig !== "Link Instagram" ? "_blank" : "_self";
 
   const separator = document.createElement("span");
   separator.textContent = "  ";
 
   const linkedinLink = document.createElement("a");
-  linkedinLink.href = alumni.linkedin !== "Link LinkedIn" ? alumni.linkedin : "#";
+  linkedinLink.href =
+    alumni.linkedin && alumni.linkedin !== "Link LinkedIn" ? alumni.linkedin : "#";
   linkedinLink.textContent = "LinkedIn";
-  linkedinLink.target = alumni.linkedin !== "Link LinkedIn" ? "_blank" : "_self";
+  linkedinLink.target =
+    alumni.linkedin && alumni.linkedin !== "Link LinkedIn" ? "_blank" : "_self";
 
   links.appendChild(igLink);
   links.appendChild(separator);
@@ -228,14 +231,13 @@ function createAlumniCard(alumni) {
 document.addEventListener("DOMContentLoaded", () => {
   const alumniContainer = document.getElementById("alumniContainer");
 
-  // No need for random image assignment since we default to the standard image
-  const shuffledAlumniData = alumniData.sort(() => Math.random() - 0.5);
-
-  shuffledAlumniData.forEach((alumni) => {
+  // Use the data directly without shuffling
+  alumniData.forEach((alumni) => {
     const col = createAlumniCard(alumni);
     alumniContainer.appendChild(col);
   });
 
+  // Initialize Masonry layout
   new Masonry("#alumniContainer", {
     itemSelector: ".col-md-4",
     columnWidth: ".col-md-4",
