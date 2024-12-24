@@ -173,7 +173,16 @@ const alumniData = [
         ig: "https://www.instagram.com/epidoey/",
         linkedin: "https://www.linkedin.com/in/evid-wijaya/",
         photo: "https://i.ibb.co.com/2t2mY4h/c232297c-6922-4b43-a7e0-8f35f4125b44.jpg",
-  }
+  },
+  {
+        nickname: "Rekha",
+        campus: "Universitas Pembangunan Jaya",
+        ig: "https://www.instagram.com/rekkkha_",
+        linkedin: "https://www.linkedin.com/in/rekha-inaya-putri",
+        photo: "URL Foto",
+  },
+    // Tambahkan data alumni lainnya di sini
+];
 ];
 
 function createAlumniCard(alumni) {
