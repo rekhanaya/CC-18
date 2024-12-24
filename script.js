@@ -113,9 +113,9 @@ const alumniData = [
   },
   {
     nickname: "Rekha",
-    campus: "Asal Kampus",
-    ig: "Link Instagram",
-    linkedin: "Link LinkedIn",
+    campus: "Universitas Pembangunan Jaya",
+    ig: "https://www.instagram.com/rekkkha_",
+    linkedin: "https://www.linkedin.com/in/rekha-inaya-putri",
     photo: "URL Foto",
   },
   {
